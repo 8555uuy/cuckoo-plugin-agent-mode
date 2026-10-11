@@ -1,0 +1,8 @@
+{
+  "id": "agent-mode",
+  "name": "Agent 模式",
+  "version": "1.0.0",
+  "description": "让 AI 更主动地使用子代理：注入委派准则提示词 + 侧边栏总开关。",
+  "author": "8555uuy",
+  "minAppVersion": "0.8.8"
+}
