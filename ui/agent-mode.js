@@ -69,7 +69,7 @@ export function apply(ctx) {
     // 挂侧边栏面板（ui 插件专属能力）
     try {
       if (ctx.ui && ctx.ui.shell && typeof ctx.ui.shell.addSidebarPanel === 'function') {
-        ctx.ui.shell.addSidebarPanel({ id: PLUGIN_ID, title: 'Agent 模式', merge: true, icon: '<svg class="ck-ab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>', html: panelHtml(enabled) });
+        ctx.ui.shell.addSidebarPanel({ id: PLUGIN_ID, title: 'Agent 模式', icon: '<svg class="ck-ab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>', html: panelHtml(enabled) });
       }
     } catch (e) { ctx.log('挂侧边栏失败: ' + (e && e.message ? e.message : e)); }
 
